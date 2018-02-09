@@ -1,0 +1,27 @@
+@media only screen and (max-height: 800px) {
+    .item{
+      max-height: 550px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .top-nav{
+      display: block;
+      text-align: center;
+    }
+
+    .logo{
+      display: block;
+    }
+}
+
+@media only screen and (max-width: 1400px){
+  .info-contacto i{
+    font-size: 15px;
+  }
+
+  .faa{
+    height: 25px;
+    font-size: 12px;
+  }
+}

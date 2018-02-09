@@ -1,0 +1,235 @@
+
+
+.menus_vendidos{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 15px 0px;
+}
+
+.texto_menus{
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 300;
+  color: grey;
+  padding: 15px 0px;
+}
+
+.m-portlet--tab .m-portlet__head{
+  height: auto !important;
+  padding-bottom: 30px !important;
+  padding-top: 10px !important;
+}
+
+text *{
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: lightgrey;
+}
+
+.m-brand__logo, .m-stack--general, .m-brand--skin-dark, .m-header-head{
+  background-color: #88b145 !important;
+}
+
+.m-aside-menu, .m-aside-left.m-aside-left--skin-dark{
+  background-color: #fff !important;
+}
+
+.m-menu__item--active, .m-menu__item--active a{
+  background-color: #88b145 !important;
+}
+
+.m-menu__item--active a .m-menu__link-icon {
+    color: #ffffff !important;
+}
+
+.m-menu__link-text{
+  text-transform: uppercase !important;
+}
+
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item:not(.m-menu__item--parent):not(.m-menu__item--open):not(.m-menu__item--expanded):not(.m-menu__item--active):hover > a *{
+  color: #fff !important;
+}
+
+.m-subheader__title{
+  font-family: 'Montserrat', sans-serif !important;
+  text-transform: uppercase;
+  font-weight: 400 !important;
+}
+
+.m-subheader__title small{
+  font-size: .7em;
+  font-family: 'Poppins', sans-serif !important;
+  text-transform: none !important;
+  font-weight: 400 !important;
+  color: grey;
+  margin-left: 30px;
+}
+
+.m-widget24__title{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500 !important;
+  margin-top: 1.8rem !important;
+}
+
+.m-widget24__stats{
+  float: none !important;
+  margin-top: 0 !important;
+  display: block;
+  margin-left: 1.8rem !important;
+  margin-right: 0 !important;
+  font-family: 'Work sans', sans-serif;
+  font-size: 2.2rem !important;
+  font-weight: 500 !important;
+}
+
+.m-widget24 .m-widget24__item .progress{
+  margin-top: 0 !important;
+}
+
+.m-widget24__stats small{
+  color: #bbbbbb;
+}
+
+.m-widget24__change, .m-widget24__number{
+  margin-bottom: 1.8rem !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+.m-widget24__change *{
+  vertical-align: middle;
+}
+
+.m-widget24__change .la-angle-up, .la-angle-up ~ strong {
+  color: rgb(144, 238, 144);
+}
+
+.m-widget24__change .la-angle-down, .la-angle-down ~ strong{
+  color: #f13e3e;
+}
+
+.info-subheader{
+  margin-bottom: 2rem;
+}
+
+.busqueda{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 200%;
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.busqueda input{
+  background: transparent;
+  border: 0;
+  width: 100%;
+  color: #fff;
+  padding-left: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.busqueda input:focus, .busqueda input:active {
+  outline: 0px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bienvenida_perfil{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: white;
+  padding-left: 1.3rem;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bienvenida_perfil strong{
+  margin-left: .3rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bienvenida_perfil i{
+  font-size: .9rem;
+  margin-left: .4rem;
+}
+
+.bienvenida_perfil:active > i:before{
+      content: "\f113";
+}
+
+.m-topbar .m-topbar__nav.m-nav > .m-nav__item > .m-nav__link .m-nav__link-icon > i{
+    color: #fff !important;
+}
+
+.pendientes-aceptacion{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 500 !important;
+  text-transform: uppercase;
+}
+
+.tiempo-real{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 15px 0px;
+}
+
+.texto_tiempo{
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 300;
+  color: grey;
+  padding: 15px 0px;
+}
+
+.portlet-tiempo-real{
+  margin-bottom: 0rem !important;
+}
+
+.actualizacion{
+  font-family: 'Poppins', sans-serif !important;
+  color: #898b96;
+  text-align: center;
+  display: block;
+  margin-top: 1rem;
+}
+
+.tiempo-real-icon{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.m-datatable__body tr td{
+  text-align: center;
+}
+
+.m-datatable__cell{
+  text-align: center;
+}
+
+.la-star{
+  color: #88b145 !important;
+}

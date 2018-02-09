@@ -1,0 +1,39 @@
+Ficha cliente -> Saldo clientes
+Tarjetas visa y como eliminarlas
+Listado de pedidos del cliente
+
+Clientes > Pedidos > Menus > Buscador
+
+
+-- Canmigos --
+
+Facturas -> num_serie 2018000001++   --> Hecho
+Quitar descargar facturas -> ver en dinA4  --> Hecho
+Facturas -> Success -> como se ha pagado  --> Hecho
+Menu desplegable -> Quitar facturas desplegable y Mi cuenta añadir facturas  --> Hecho
+No opiniones -> 0 estrellas  --> Hecho
+Galeria de imágenes -> 1 por 1 --> Hecho
+Arreglar error registro cuando no hay nada --> Hecho
+Si no se ha pagado quitar menu de opiniones --> Hecho
+Galeria slider -> Perfil público --> Hecho
+Configuracion -> Planes --> Hecho
+Base de datos -> Free -> 12 meses hasta.... --> Hecho
+Precios todos con IVA --> Hecho
+Registro -> Aparecer VIsas --> Hecho
+Errores de pago en rojo y en español
+Mapas -> API Google
+Servicios -> Usuario
+Perfil público limitado --> Hecho
+Adiestramiento privado -> Buscador sin postal (Errores?) --> Hecho
+Clases grupales -> Aparezcan los que tengan clases grupales (cursos)
+Porcentage perfil completo (coger de bbdd y calcular)
+Fichas pendientes de validacion (El usuario si, pero le ponga pendiente de validacion) (Warning Bootstrap alert)
+Comprovar datos de formulario de registro (emails...) --> Hecho
+Separado por comas, buscar mas de un código postal
+Profesional->PSEO URL Coger funciona que quita caracteres etc... (Skype enrique funcion)
+Pedir nombre formulario de registro para crear pseo URL
+
+AIzaSyAyv-qy1HY6WHwSxpcktY13Km7Eb9B5zYI
+
+
+Captcha (Pendiente)...
