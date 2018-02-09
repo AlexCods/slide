@@ -25,7 +25,13 @@ class Productos extends CI_Controller {
 
 	public function ver_producto(){
 		$this->load->helper('url');
+		$this->load->view('general/head');
+		$this->load->view('general/nav');
+		$this->load->view('general/barra_posicion');
+		$this->load->view('general/categorias');
     $this->load->view('productos/ver_producto');
+		$this->load->view('general/footer');
+		$this->load->view('general/foot');
 	}
 
 }

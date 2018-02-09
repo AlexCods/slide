@@ -7,7 +7,7 @@
     <div class="top-nav col-md-12 col-xs-12" style="padding: 15px; justify-content: center; align-items: center">
       <div class="col-md-11" style="display: flex;justify-content: center;align-items: center;">
         <div class="logo col-xs-12 col-md-3">
-          <img width="60%" src="assets/img/logo-sample.png">
+          <img width="60%" src="<?php echo base_url(); ?>assets/img/logo-sample.png">
         </div>
         <div class="buscador col-xs-12 col-md-6">
           <form class="col-md-12">

@@ -20,6 +20,7 @@ class Buscar extends CI_Controller {
 	 */
 	public function index()
 	{
+    
 		$this->load->view('general/head');
     $this->load->view('general/nav');
     $this->load->view('general/barra_posicion');
