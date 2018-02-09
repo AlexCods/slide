@@ -3,7 +3,7 @@
   <div class="container">
   <div class="items-posicionamiento">
     <a href="<?php echo base_url(); ?>">
-      <div class="item-posicionamiento">    
+      <div class="item-posicionamiento">
         Home
       </div>
     </a>
