@@ -2,14 +2,16 @@
 <div class="posicionamiento">
   <div class="container">
   <div class="items-posicionamiento">
-    <div class="item-posicionamiento">
-      Home
-    </div>
+    <a href="<?php echo base_url(); ?>">
+      <div class="item-posicionamiento">    
+        Home
+      </div>
+    </a>
     <span class="separacion-item-posicionamiento">
       >
     </span>
     <div class="item-posicionamiento">
-      Productos
+      <span><?php echo $this->uri->segment(1); ?></span>
     </div>
     <span class="separacion-item-posicionamiento">
       >

@@ -10,8 +10,8 @@
           <img width="60%" src="<?php echo base_url(); ?>assets/img/logo-sample.png">
         </div>
         <div class="buscador col-xs-12 col-md-6">
-          <form class="col-md-12">
-            <input class="texto-buscar col-md-10" type="text" placeholder="¿Qué buscas?">
+          <form class="col-md-12" method="get" action="<?php echo base_url(); ?>buscar">
+            <input class="texto-buscar col-md-10" type="text" name="s" placeholder="¿Qué buscas?">
             <input class="buscar col-md-2" type="submit" value="Buscar">
           </form>
         </div>

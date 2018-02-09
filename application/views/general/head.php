@@ -19,5 +19,6 @@
     <link href="<?php echo base_url(); ?>assets/css/responsive.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/css/margin-padding.min.css" rel="stylesheet">
   </head>
   <body>

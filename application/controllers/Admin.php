@@ -20,7 +20,15 @@ class Admin extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('admin/admin');
+		$this->load->view('general/head');
+		$this->load->view('general/nav');
+		$this->load->view('home/tipos');
+		$this->load->view('home/destacados');
+		$this->load->view('home/portofolio');
+		$this->load->view('home/testimonios');
+		$this->load->view('general/footer');
+		$this->load->view('general/foot');
+
 	}
 
 	public function dashboard(){
