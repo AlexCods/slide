@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Producto extends CI_Controller {
+class Productos extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,12 +20,12 @@ class Producto extends CI_Controller {
 	 */
 	public function index()
 	{
-
+		echo "pagina productos";
 	}
 
 	public function ver_producto(){
 		$this->load->helper('url');
-    $this->load->view('producto/ver_producto');
+    $this->load->view('productos/ver_producto');
 	}
 
 }

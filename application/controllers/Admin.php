@@ -51,4 +51,5 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/general/footer'); // </footer> y final del documento
 		// ------------------
 	}
+
 }
