@@ -55,3 +55,5 @@ $route['translate_uri_dashes'] = FALSE;
 $route['productos'] = 'productos/productos';
 $route['productos/:any'] = 'productos/productos/ver_producto';
 $route['buscar'] = 'buscar/buscar';
+$route['carrito/anadir_carro'] = 'carrito/carrito/anadir_carro';
+$route['carrito'] = 'carrito/carrito';

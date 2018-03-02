@@ -17,8 +17,25 @@
         </div>
         <div class="contacto col-md-3">
             <span><i class="fa fa-user" aria-hidden="true"></i></span>
-            <span><i class="fa fa-shopping-basket" aria-hidden="true"></i></span>
+            <span id="carrito"><i class="fa fa-shopping-basket" data-content="<?php echo count($this->cart->contents()); ?>" aria-hidden="true"></i>
+
+              <div style="display: none" id="contenido_carrito">
+                <?php
+                  foreach ($this->cart->contents() as $items) {
+                    
+                    echo $items['name'];
+                    echo "Cantidad: " . $items['qty'];
+                    echo " Total a pagar: " . $items['subtotal'] . '€';
+                    echo "<br>";
+                  }
+                ?>
+              </div>
+
+            </span>
         </div>
+
+
+
       </div>
     </div>
     <div class="col-md-12 div-menu">

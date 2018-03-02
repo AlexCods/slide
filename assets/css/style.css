@@ -235,3 +235,12 @@ text *{
 .la-star{
   color: #88b145 !important;
 }
+
+
+.opciones_productos button{
+  background-color: #88b145;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: white;
+  margin-left: 20px;
+}

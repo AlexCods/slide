@@ -12,6 +12,4 @@ $('.busqueda_column').click(function(){
   $('.producto_resultado .producto-titulo').removeClass('col-md-12').addClass('col-md-8').find('h3').css('font-size','24px');;
   $('.producto_resultado .producto-descripcion').show();
   $('.producto_resultado .ver_producto').css({'margin-left':'15px','width':'auto'});
-
-
 });

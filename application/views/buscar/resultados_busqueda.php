@@ -28,7 +28,9 @@
       <div class="col-md-12 producto-descripcion">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
       </div>
-      <input type="button" class="ver_producto m-t" value="Veure producte">
+      <a href="<?php echo base_url(); ?>productos/producto">
+        <input type="button" class="ver_producto m-t" value="Veure producte">
+      </a>
     </div>
   </div>
 
@@ -45,7 +47,9 @@
       <div class="col-md-12 producto-descripcion">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
       </div>
-      <input type="button" class="ver_producto m-t" value="Veure producte">
+      <a href="<?php echo base_url(); ?>productos/producto">
+        <input type="button" class="ver_producto m-t" value="Veure producte">
+      </a>
     </div>
   </div>
 
@@ -62,7 +66,9 @@
       <div class="col-md-12 producto-descripcion">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
       </div>
-      <input type="button" class="ver_producto m-t" value="Veure producte">
+      <a href="<?php echo base_url(); ?>productos/producto">
+        <input type="button" class="ver_producto m-t" value="Veure producte">
+      </a>
     </div>
   </div>
 
@@ -79,7 +85,9 @@
       <div class="col-md-12 producto-descripcion">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
       </div>
-      <input type="button" class="ver_producto m-t" value="Veure producte">
+      <a href="<?php echo base_url(); ?>productos/producto">
+        <input type="button" class="ver_producto m-t" value="Veure producte">
+      </a>
     </div>
   </div>
 </div>

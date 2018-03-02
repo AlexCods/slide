@@ -2,7 +2,7 @@
         <div class="col-md-9">
           <div class="img-producto col-md-6">
             <div class="col-md-12">
-              <img src="<?php echo base_url(); ?>assets/img/polo.png" max-height="250px"  alt="Camiseta Player Unknown" style="width:100%">
+              <img src="<?php echo base_url(); ?>assets/productos/<?php echo $imagen_producto->path; ?>" max-height="250px"  alt="Camiseta Player Unknown" style="width:100%">
             </div>
             <div style="margin-top: 15px;" class="col-md-12">
               <div class="producto-preview">
@@ -18,21 +18,36 @@
           </div>
           <div class="info-producto col-md-6">
             <div class="col-md-12 producto-titulo">
-              <h3>Chicken Winner Dinner PUBG</h3>
+              <h3><?php echo $producto->nombre_producto; ?></h3>
             </div>
             <div class="col-md-12 producto-review">
-              <small>Todabía no hay reviews de este producto</small>
+              <?php
+                if (isset($reviews) && !empty($reviews)) {
+
+                } else {
+                  echo '<small>Todabía no hay reviews de este producto</small>';
+                }
+              ?>
+
             </div>
             <div style="padding: 0; margin-top: 25px; display: flex;align-items: center;" class="col-md-12">
-              <div class="producto-precio col-md-6">
-                <span>20.00€</span>
+              <div class="producto-precio col-md-5">
+                <span><?php echo number_format($producto->precio_producto,2); ?>€</span>
               </div>
-              <div class="col-md-6 producto-disponibilidad">
-                Disponibilidad: <span>En stock</span>
+              <div class="col-md-7 producto-disponibilidad">
+                Disponibilidad:
+                <?php
+                  if ($producto->stock > 0) {
+                    echo '<span class="success">En stock</span>';
+                  }else {
+                    echo '<span class="danger">No disponible</span>';
+                  }
+                ?>
+
               </div>
             </div>
             <div class="col-md-12 producto-descripcion">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              <?php echo $producto->descripcion_producto; ?>
             </div>
             <div class="col-md-12 producto-tips">
               <ul>
@@ -69,7 +84,14 @@
                 <input type="number" value="1">
                 <span class="sumar_cantidad">></span>
               </div>
-              <input type="button" class="anadir_carro" value="Afegir al cistell">
+              <?php
+                if ($producto->stock > 0) {
+                  echo '<input type="button" class="anadir_carro" value="Afegir al cistell">';
+                } else {
+                  echo '<input type="button" disabled="true" class="anadir_carro" value="No disponible temporalmente">';
+                }
+              ?>
+
             </div>
           </div>
 
@@ -86,18 +108,28 @@
               </div>
             </ul>
 
-            <div class="tab-content">
+            <div style="margin-bottom: 60px" class="tab-content">
               <div id="home" class="tab-pane fade in active">
-                <h3>HOME</h3>
-                <p>Some content.</p>
+                <h3><?php echo $producto->nombre_producto; ?></h3>
+                <p><?php echo $producto->descripcion_producto; ?></p>
               </div>
               <div id="menu1" class="tab-pane fade">
-                <h3>Menu 1</h3>
-                <p>Some content in menu 1.</p>
+                <h3>Información de las tallas</h3>
+                <p>En construcción</p>
               </div>
               <div id="menu2" class="tab-pane fade">
-                <h3>Menu 2</h3>
-                <p>Some content in menu 2.</p>
+                <?php
+                  if (isset($reviews) && !empty($reviews)) {
+                    print_r($reviews);
+                  } else {
+                    echo '<div style="padding: 40px;">';
+                    echo "<p>Todavia no hay reviews sobre este producto.</p>";
+                    echo '</div>';
+                  }
+                ?>
+
+
+
               </div>
             </div>
           </div>
@@ -109,9 +141,29 @@
     <!-- Termina div del full page -->
     <script type="text/javascript">
 
+
     $('.nav-pills div li').click(function(){
       $('.nav-pills div li').removeClass('active');
       $(this).addClass('active');
+      var href = $(this).find('a').attr('href');
+      $('.tab-content div').removeClass('active in');
+      $(href).addClass('in').addClass('active');
+    });
+
+
+    $('.anadir_carro').click(function(){
+
+      var data = {
+        id_producto: '<?php echo $producto->id_producto; ?>'
+      }
+
+      $.ajax({
+        url: "<?php echo base_url() . 'carrito/anadir_carro'; ?>",
+        type: 'post',
+        data: data
+      }).done(function(response){
+        $('#carrito').load();
+      });
     });
 
     </script>

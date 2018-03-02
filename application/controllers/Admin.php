@@ -3,6 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin extends CI_Controller {
 
+	function __construct() {
+			parent::__construct();
+			$this->load->database();
+	}
+
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,11 +25,14 @@ class Admin extends CI_Controller {
 	 */
 	public function index()
 	{
+
+		$data['productos'] = $this->general_model->productosPortfolio();
+
 		$this->load->view('general/head');
 		$this->load->view('general/nav');
 		$this->load->view('home/tipos');
 		$this->load->view('home/destacados');
-		$this->load->view('home/portofolio');
+		$this->load->view('home/portofolio',$data);
 		$this->load->view('home/testimonios');
 		$this->load->view('general/footer');
 		$this->load->view('general/foot');
@@ -40,22 +48,14 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/general/footer');
 	}
 
-	public function clientes(){
+	public function administrador(){
 		$this->load->database(); //Cargamos base de datos
-
-		// ----- Modelos -----
-		$this->load->model('admin/clientes/clientes_model');
-		// -------------------
-
-		// Cogemos la lista de clientes
-		$data['lista_clientes'] = $this->clientes_model->getListaclientes();
-
 
 		// ----- Vistas -----
 		$this->load->view('admin/general/head'); // El <head>
 		$this->load->view('admin/general/header'); // Menú superior
 		$this->load->view('admin/general/left_menu'); // Menú lateral izquierdo
-		$this->load->view('admin/clientes/clientes',$data); // Tablas clientes
+		$this->load->view('admin/administrador/administrador'); // Tablas clientes
 		$this->load->view('admin/general/footer'); // </footer> y final del documento
 		// ------------------
 	}

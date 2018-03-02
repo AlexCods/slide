@@ -8,221 +8,55 @@
 
 <!-- Empieza la galeria-->
 <div class="container columns">
-  <div class="column samarreta">
-    <div class="content">
-      <div class="content-image">
-        <img src="assets/img/polo.png" alt="Camiseta Player Unknown" style="width:100%">
-      </div>
-      <div class="content-text">
-        <h4>Camiseta Winner Chicken Dinner Player unknown's</h4>
-        <div class="bottom-content-text">
-          <h2>20.00€</h2>
-          <a class="afegir">Afegir al cistell</a>
-          <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column samarreta">
-    <div class="content">
-      <div class="content-image">
-        <div class="rebajada">25%</div>
-        <img src="assets/img/polo.png" alt="Camiseta Player Unknown" style="width:100%">
-      </div>
-      <div class="content-text">
-        <h4>Camiseta Winner Chicken Dinner Player unknown's</h4>
-        <div class="bottom-content-text">
-          <h2>20.00€<small>15.00€</small></h2>
-          <a class="afegir">Afegir al cistell</a>
-          <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column samarreta">
-    <div class="content">
-      <div class="content-image">
-        <img src="assets/img/polo.png" alt="Camiseta Player Unknown" style="width:100%">
-      </div>
-      <div class="content-text">
-        <h4>Camiseta Winner Chicken Dinner Player unknown's</h4>
-        <div class="bottom-content-text">
-          <h2>20.00€</h2>
-          <a class="afegir">Afegir al cistell</a>
-          <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column pantalo">
-    <div class="content">
-      <div class="content-image">
-        <div class="rebajada">25%</div>
-        <img src="assets/img/polo.png" alt="Camiseta Player Unknown" style="width:100%">
-      </div>
-      <div class="content-text">
-        <h4>Camiseta Winner Chicken Dinner Player unknown's</h4>
-        <div class="bottom-content-text">
-          <h2>20.00€<small>15.00€</small></h2>
-          <a class="afegir">Afegir al cistell</a>
-          <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column desuadora">
-    <div class="content">
-      <div class="content-image">
-        <img src="assets/img/polo.png" alt="Camiseta Player Unknown" style="width:100%">
-      </div>
-      <div class="content-text">
-        <h4>Camiseta Winner Chicken Dinner Player unknown's</h4>
-        <div class="bottom-content-text">
-          <h2>20.00€</h2>
-          <a class="afegir">Afegir al cistell</a>
-          <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column samarreta">
-    <div class="content">
-      <div class="content-image">
-        <img src="assets/img/polo.png" alt="Camiseta Player Unknown" style="width:100%">
-      </div>
-      <div class="content-text">
-        <h4>Camiseta Winner Chicken Dinner Player unknown's</h4>
-        <div class="bottom-content-text">
-          <h2>20.00€</h2>
-          <a class="afegir">Afegir al cistell</a>
-          <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column samarreta">
-    <div class="content">
-      <div class="content-image">
-        <div class="rebajada">25%</div>
-        <img src="assets/img/polo.png" alt="Camiseta Player Unknown" style="width:100%">
-      </div>
-      <div class="content-text">
-        <h4>Camiseta Winner Chicken Dinner Player unknown's</h4>
-        <div class="bottom-content-text">
-          <h2>20.00€<small>15.00€</small></h2>
-          <a class="afegir">Afegir al cistell</a>
-          <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column samarreta">
-    <div class="content">
-      <div class="content-image">
-        <img src="assets/img/polo.png" alt="Camiseta Player Unknown" style="width:100%">
-      </div>
-      <div class="content-text">
-        <h4>Camiseta Winner Chicken Dinner Player unknown's</h4>
-        <div class="bottom-content-text">
-          <h2>20.00€</h2>
-          <a class="afegir">Afegir al cistell</a>
-          <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column pantalo">
-    <div class="content">
-      <div class="content-image">
-        <div class="rebajada">25%</div>
-        <img src="assets/img/polo.png" alt="Camiseta Player Unknown" style="width:100%">
-      </div>
-      <div class="content-text">
-        <h4>Camiseta Winner Chicken Dinner Player unknown's</h4>
-        <div class="bottom-content-text">
-          <h2>20.00€<small>15.00€</small></h2>
-          <a class="afegir">Afegir al cistell</a>
-          <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column desuadora">
-    <div class="content">
-      <div class="content-image">
-        <img src="assets/img/polo.png" alt="Camiseta Player Unknown" style="width:100%">
-      </div>
-      <div class="content-text">
-        <h4>Camiseta Winner Chicken Dinner Player unknown's</h4>
-        <div class="bottom-content-text">
-          <h2>20.00€</h2>
-          <a class="afegir">Afegir al cistell</a>
-          <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
+  <?php
+  foreach ($productos as $producto) {
+
+  ?>
+  <a href="<?php echo base_url() . 'productos/' . $producto->pseo_url; ?>">
+    <div class="column <?php echo $producto->type; ?>">
+      <div class="content">
+        <div class="content-image">
+          <img src="assets/img/polo.png" alt="Camiseta Player Unknown" style="width:100%">
+        </div>
+        <div class="content-text">
+          <h4><?php echo $producto->nombre_producto; ?></h4>
+          <div class="bottom-content-text">
+            <h2><?php echo number_format($producto->precio_producto,2); ?>€</h2>
+            <a class="afegir">
+              Afegir al cistell
+            </a>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  <?php
+    }
+  ?>
 <!-- END GRID -->
 </div>
+
+<script type="text/javascript">
+// Add active class to the current button (highlight it)
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("port-button");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    $('.buttons-portfolio .active').removeClass('active');
+    this.className += " active";
+  });
+}
+
+
+/* ------------------------------------- */
+</script>
 <!-- /section PORTOFOLIO -->

@@ -607,7 +607,7 @@ border-bottom: 5px solid #666666;
 }
 
 .fa-shopping-basket:after{
-  content: "0";
+  content: attr(data-content);
   width: 25px;
   height: 25px;
   border-radius: 100%;
@@ -1336,6 +1336,27 @@ border-bottom: 5px solid #666666;
 }
 
 /* /// Busqueda --- */
+
+
+
+/* CARRITO */
+
+
+#contenido_carrito{
+  position: absolute;
+  padding: 10px;
+  background-color: lightgrey;
+  z-index: 9999999999;
+  width: 300px;
+  margin-left: -110px;
+  margin-top: 10px;
+}
+
+#carrito{
+  position: relative;
+}
+
+/* end CARRITO */
 
 footer{
   padding: 60px;

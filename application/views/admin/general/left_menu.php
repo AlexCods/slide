@@ -307,16 +307,16 @@ data-menu-vertical="true"
             </div>
           </li>
 
-          <li class="m-menu__item  <?php if ($this->uri->segment(2) == 'clientes') {
+          <li class="m-menu__item  <?php if ($this->uri->segment(2) == 'administrador') {
               echo 'm-menu__item--active';
             } else {
               echo 'm-menu__item--submenu';
             }; ?>" aria-haspopup="true"  data-menu-submenu-toggle="hover" data-redirect="true">
-            <a  href="<?php echo base_url() . "index.php/admin/clientes"; ?>" class="m-menu__link ">
+            <a  href="<?php echo base_url() . "admin/administrador"; ?>" class="m-menu__link ">
               <span class="m-menu__item-here"></span>
               <i class="m-menu__link-icon flaticon-users"></i>
               <span class="m-menu__link-text">
-                clientes
+                administrador
               </span>
               <i class="m-menu__ver-arrow la la-angle-right"></i>
             </a>
