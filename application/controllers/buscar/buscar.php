@@ -3,6 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Buscar extends CI_Controller {
 
+	function __construct() {
+			parent::__construct();
+			$this->load->database();
+			$this->load->helper('cookie');
+			$this->load->helper('url');
+			$this->load->model('buscar/buscar_model');
+	}
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,12 +27,20 @@ class Buscar extends CI_Controller {
 	 */
 	public function index()
 	{
-    
+
+		if ($this->input->get('s')) {
+			$busqueda = $this->input->get('s');
+
+			$data['productos'] = $this->buscar_model->buscarProductos($busqueda);
+		}
+
+		print_r($data['productos']);
+
 		$this->load->view('general/head');
     $this->load->view('general/nav');
     $this->load->view('general/barra_posicion');
     $this->load->view('general/categorias');
-    $this->load->view('buscar/resultados_busqueda');
+    $this->load->view('buscar/resultados_busqueda',$data);
     $this->load->view('general/footer');
     $this->load->view('general/foot');
 
