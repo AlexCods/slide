@@ -28,13 +28,16 @@ class Buscar extends CI_Controller {
 	public function index()
 	{
 
+		$data = array();
+
 		if ($this->input->get('s')) {
+
 			$busqueda = $this->input->get('s');
 
 			$data['productos'] = $this->buscar_model->buscarProductos($busqueda);
+
 		}
 
-		print_r($data['productos']);
 
 		$this->load->view('general/head');
     $this->load->view('general/nav');

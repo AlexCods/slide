@@ -14,7 +14,7 @@
 
   ?>
   <a href="<?php echo base_url() . 'productos/' . $producto->pseo_url; ?>">
-    <div class="column <?php echo $producto->type; ?>">
+    <div class="column <?php echo $producto->nombre_tipo_producto; ?>">
       <div class="content">
         <div class="content-image">
           <img src="assets/img/polo.png" alt="Camiseta Player Unknown" style="width:100%">

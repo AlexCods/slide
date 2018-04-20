@@ -25,7 +25,7 @@ class Admin extends CI_Controller {
 	 */
 	public function index()
 	{
-
+		
 		$data['productos'] = $this->general_model->productosPortfolio();
 
 		$this->load->view('general/head');
@@ -36,6 +36,7 @@ class Admin extends CI_Controller {
 		$this->load->view('home/testimonios');
 		$this->load->view('general/footer');
 		$this->load->view('general/foot');
+		
 
 	}
 
@@ -49,13 +50,27 @@ class Admin extends CI_Controller {
 	}
 
 	public function administrador(){
-		$this->load->database(); //Cargamos base de datos
+		
+		$this->load->model('admin/productos/productos_model');
+
+		$data['productos'] = $this->productos_model->getProductos();
 
 		// ----- Vistas -----
 		$this->load->view('admin/general/head'); // El <head>
 		$this->load->view('admin/general/header'); // Menú superior
 		$this->load->view('admin/general/left_menu'); // Menú lateral izquierdo
-		$this->load->view('admin/administrador/administrador'); // Tablas clientes
+		$this->load->view('admin/administrador/administrador',$data); // 
+		$this->load->view('admin/general/footer'); // </footer> y final del documento
+		// ------------------
+
+	}
+
+	public function anadir_producto(){
+		// ----- Vistas -----
+		$this->load->view('admin/general/head'); // El <head>
+		$this->load->view('admin/general/header'); // Menú superior
+		$this->load->view('admin/general/left_menu'); // Menú lateral izquierdo
+		$this->load->view('admin/administrador/anadir_producto'); //
 		$this->load->view('admin/general/footer'); // </footer> y final del documento
 		// ------------------
 	}
