@@ -1,7 +1,14 @@
 </div>
+
+<script>
+  SITE_URL = '<?php echo base_url(); ?>';
+  CURRENT_URL = '<?php echo current_url(); ?>';
+  HELPER_URL = '<?php echo base_url() . "helper/"; ?>'
+</script>
 <script src="<?php echo base_url(); ?>assets/js/main.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/slick.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/owl.carousel.js"></script>
+<?php if ($this->uri->segment(1) == 'admin') { ?><script src="<?php echo base_url(); ?>assets/js/administrador.js"></script><?php } ?>
 <?php if ($this->uri->segment(1) == 'buscar') { ?><script src="<?php echo base_url(); ?>assets/js/buscador.js"></script><?php } ?>
 <script type="text/javascript">
 
@@ -22,10 +29,6 @@
       }
 
   });
-
-
-
-
 
 </script>
 </body>

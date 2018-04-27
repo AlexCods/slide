@@ -244,3 +244,69 @@ text *{
   color: white;
   margin-left: 20px;
 }
+
+.centrar{
+  margin: auto;
+  float: none;
+}
+
+.vertical-col{
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.precio_producto_administrador::after{
+  content: "€";
+}
+
+.mas-info, .mas-info span{
+  float: right;
+  cursor: pointer;
+  color: #88b145;
+  font-weight: 500;
+}
+
+.mas-info:hover > span{
+  font-weight: 600;
+}
+
+.nml{
+  margin-left: 0;
+}
+
+.nmr{
+  margin-right: 0;
+}
+
+.no-padding{
+  padding: 0;
+}
+
+.option-tallas{
+  list-style: none;
+  width: 100%;
+  padding: 0px;
+  border-left: 1px solid #88b145;
+  border-right: 1px solid #88b145;
+}
+
+.option-tallas li{
+  text-align: left;
+  padding: 8px;
+  font-size: 1.1em;
+  padding-left: 20px;
+  border-bottom: 1px solid #88b145;  
+}
+
+.option-tallas li:hover{
+  background-color: #88b145;
+  transition: all .4s;
+  color: white;
+}
+
+.talla-actual{
+  background-color: #88b145;
+  color: #fff;
+  padding: 8px;
+  border-radius: 20px;
+}

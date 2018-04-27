@@ -35,12 +35,52 @@
                                 <h3 class="m-portlet__head-text">
                                   Información nuevo producto
                                 </h3>
-                                <div class="m-portlet__body">
-                                body
-                                </div>
                               </div>
                               
                             </div>
+                          </div>
+                          <div class="m-portlet__body">
+                            <div class="col-md-10 centrar">
+                            <div class="row">
+                                <div class="col-md-6 vertical-col">
+                                  <div class="form-group">
+                                    
+                                    <input type="text" class="form-control" placeholder="Nombre del producto">
+                                  </div> 
+                                  <div class="form-group">
+                                  
+                                    <textarea class="form-control" rows="5" placeholder="Descripción del producto"></textarea>
+                                    
+                                  </div> 
+                                  <div class="form-group">
+                                      <input type="number" placeholder="Precio" class="form-control precio_producto_administrador">
+                                  </div>
+                                  <a class="mas-info">
+                                    <span>Más info</span>                                  
+                                  </a>
+                                  <div class="hidden">
+                                    <div class="form-group mt-5">
+                                      <h4 style="display: inline-block">Tallas</h4>
+                                      <div class="tallas-actuales ml-3" style="display: inline-block;">
+                                        
+                                      </div>
+                                      <div class="col-md-12 row text-center nml nmr no-padding mt-4">
+                                        <input type="text" class="do-tallas form-control col-md-12">   
+                                        <ul class="option-tallas">
+
+                                        </ul>                                    
+                                      </div>
+                                      
+                                      
+                                   </div> 
+                                  </div>
+                                </div>
+                                <div class="col-md-6 vertical-col">
+                                  <input type="file">
+                                </div>
+                                
+                              </div>
+                            </div>    
                           </div>
                         </div>
                       </div>

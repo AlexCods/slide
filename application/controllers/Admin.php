@@ -47,6 +47,7 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/general/left_menu');
 		$this->load->view('admin/dashboard/dashboard');
 		$this->load->view('admin/general/footer');
+		$this->load->view('general/foot'); // 	
 	}
 
 	public function administrador(){
@@ -61,6 +62,7 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/general/left_menu'); // Menú lateral izquierdo
 		$this->load->view('admin/administrador/administrador',$data); // 
 		$this->load->view('admin/general/footer'); // </footer> y final del documento
+		$this->load->view('general/foot'); // </footer> y final del documento		
 		// ------------------
 
 	}
@@ -72,6 +74,7 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/general/left_menu'); // Menú lateral izquierdo
 		$this->load->view('admin/administrador/anadir_producto'); //
 		$this->load->view('admin/general/footer'); // </footer> y final del documento
+		$this->load->view('general/foot'); //	
 		// ------------------
 	}
 
