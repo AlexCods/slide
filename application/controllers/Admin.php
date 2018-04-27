@@ -6,6 +6,8 @@ class Admin extends CI_Controller {
 	function __construct() {
 			parent::__construct();
 			$this->load->database();
+			$this->load->helper('general');
+			$this->load->model('admin/productos/productos_model');
 	}
 
 	/**
@@ -51,8 +53,6 @@ class Admin extends CI_Controller {
 	}
 
 	public function administrador(){
-		
-		$this->load->model('admin/productos/productos_model');
 
 		$data['productos'] = $this->productos_model->getProductos();
 
@@ -68,14 +68,47 @@ class Admin extends CI_Controller {
 	}
 
 	public function anadir_producto(){
-		// ----- Vistas -----
-		$this->load->view('admin/general/head'); // El <head>
-		$this->load->view('admin/general/header'); // Menú superior
-		$this->load->view('admin/general/left_menu'); // Menú lateral izquierdo
-		$this->load->view('admin/administrador/anadir_producto'); //
-		$this->load->view('admin/general/footer'); // </footer> y final del documento
-		$this->load->view('general/foot'); //	
-		// ------------------
+		
+		if ($this->input->post()){
+
+			$target_dir = "./assets/productos/";
+			$file = generateRandomString() . '_' . basename($_FILES["imagen-producto"]["name"]);
+			$target_file = $target_dir . $file;
+			$uploadOk = 1;
+			$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+			// Check if image file is a actual image or fake image
+			
+			if ($uploadOk == 0) {
+				echo "Lo siento, la imagen del producto no se ha añadido";
+			// if everything is ok, try to upload file
+			} else {
+				if (move_uploaded_file($_FILES["imagen-producto"]["tmp_name"], $target_file)) {
+					echo "The file ". basename( $_FILES["imagen-producto"]["name"]). " has been uploaded.";
+				} else {
+					echo "No se ha podido subir la imagen";
+				}
+			}
+
+			$post = $this->input->post();
+
+			$this->productos_model->subirProducto($post,$file);
+
+		} else {
+
+			// ----- Vistas -----
+			$this->load->view('admin/general/head'); // El <head>
+			$this->load->view('admin/general/header'); // Menú superior
+			$this->load->view('admin/general/left_menu'); // Menú lateral izquierdo
+			$this->load->view('admin/administrador/anadir_producto'); //
+			$this->load->view('admin/general/footer'); // </footer> y final del documento
+			$this->load->view('general/foot'); //	
+			// ------------------
+
+		}
+
+		
+		
+		
 	}
 
 }

@@ -40,25 +40,25 @@
                             </div>
                           </div>
                           <div class="m-portlet__body">
+                          <form method="post" enctype="multipart/form-data">
                             <div class="col-md-10 centrar">
                             <div class="row">
                                 <div class="col-md-6 vertical-col">
                                   <div class="form-group">
-                                    
-                                    <input type="text" class="form-control" placeholder="Nombre del producto">
+                                    <input type="text" class="form-control" name="nombre-producto" placeholder="Nombre del producto">
                                   </div> 
                                   <div class="form-group">
                                   
-                                    <textarea class="form-control" rows="5" placeholder="Descripción del producto"></textarea>
+                                    <textarea class="form-control" rows="5" name="descripcion-producto" placeholder="Descripción del producto"></textarea>
                                     
                                   </div> 
                                   <div class="form-group">
-                                      <input type="number" placeholder="Precio" class="form-control precio_producto_administrador">
+                                      <input type="number" placeholder="Precio" name="precio-producto" class="form-control precio_producto_administrador">
                                   </div>
                                   <a class="mas-info">
                                     <span>Más info</span>                                  
                                   </a>
-                                  <div class="hidden">
+                                  <div class="mas-info-bloc hidden">
                                     <div class="form-group mt-5">
                                       <h4 style="display: inline-block">Tallas</h4>
                                       <div class="tallas-actuales ml-3" style="display: inline-block;">
@@ -75,9 +75,22 @@
                                    </div> 
                                   </div>
                                 </div>
-                                <div class="col-md-6 vertical-col">
-                                  <input type="file">
+                                <div class="col-md-6 vertical-col no-padding">
+                                 
+                                    <label class="col-md-12">
+                                      <div class="add-image p-4">
+                                        <span class="text-add-image">Añadir imagen</span>
+                                        <img class="hidden" height="100%" id="blah" src="#" alt="your image" />           
+                                      </div>
+                                      <input class="hidden" name="imagen-producto" type='file' id="imgInp" />
+                                    </label>                            
+                                  
+                                
+                                  <div class="col-md-12">
+                                    <input class="guardar-producto mt-4" type="submit" value="Guardar producto">                                  
+                                  </div>
                                 </div>
+                                </form>
                                 
                               </div>
                             </div>    

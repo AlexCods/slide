@@ -267,7 +267,7 @@ text *{
 }
 
 .mas-info:hover > span{
-  font-weight: 600;
+  text-decoration: underline;
 }
 
 .nml{
@@ -309,4 +309,29 @@ text *{
   color: #fff;
   padding: 8px;
   border-radius: 20px;
+}
+
+.m-portlet__head-text{
+
+}
+
+.hidden{
+  display: none;
+}
+
+.add-image{
+  width: 100%;
+  height: 300px;
+  border: 1px solid lightgrey;
+  text-align: center;
+  overflow: hidden;
+}
+
+.guardar-producto{
+  float: right;
+
+  background-color: #88b145;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: white;
 }

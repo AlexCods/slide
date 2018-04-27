@@ -35,7 +35,7 @@ $('.do-tallas').on('click', function(){
   }
 
   $(document).on('click','.li-talla',function(){
-    alert('test');
+    
     var nombre = $(this).data('nombre');
     var tag = $(this).data('tag');
     var id_talla = $(this).data('id_talla');
@@ -43,6 +43,28 @@ $('.do-tallas').on('click', function(){
     html = '<span class="talla-actual"><i class="fa fa-times mr-2"></i>' + tag + '</span>';
 
     $('.tallas-actuales').append(html);
-  })
+  });
 
+  $('.mas-info').click(function(){
+    $('.mas-info-bloc').toggleClass('hidden');
+  });
+
+  function readURL(input) {
+
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+  
+      reader.onload = function(e) {
+        $('#blah').attr('src', e.target.result);
+        $('#blah').removeClass('hidden');
+        $('.text-add-image').addClass('hidden');
+      }
+  
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+  
+  $("#imgInp").change(function() {
+    readURL(this);
+  });
   
